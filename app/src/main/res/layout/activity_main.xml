@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/langButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lang_button_text" />
+
+
+    <TextView
+        android:id="@+id/fromTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/from_text"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"/>
+
+    <Spinner
+        android:id="@+id/fromSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fromTextView"
+        android:layout_alignStart="@+id/fromTextView"
+        android:layout_marginTop="8dp"
+        android:entries="@array/length_units"/>
+
+    <TextView
+        android:id="@+id/toTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/to_text"
+        android:layout_below="@+id/fromSpinner"
+        android:layout_alignStart="@+id/fromTextView"
+        android:layout_marginTop="16dp"/>
+
+    <Spinner
+        android:id="@+id/toSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toTextView"
+        android:layout_alignStart="@+id/fromTextView"
+        android:layout_marginTop="8dp"
+        android:entries="@array/length_units"/>
+
+    <EditText
+        android:id="@+id/inputEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toSpinner"
+        android:layout_alignStart="@+id/fromTextView"
+        android:layout_marginTop="16dp"
+        android:hint="@string/input_hint"
+        android:inputType="numberDecimal"/>
+
+    <Button
+        android:id="@+id/convertButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/inputEditText"
+        android:layout_alignStart="@+id/fromTextView"
+        android:layout_marginTop="16dp"
+        android:text="@string/convert_button"/>
+
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/convertButton"
+        android:layout_alignStart="@+id/fromTextView"
+        android:layout_marginTop="16dp"/>
+</RelativeLayout>

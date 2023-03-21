@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">International_converter</string>
+
+    <string name="lang_button_text">Switch to Russian</string>
+
+
+    <string name="input_hint">Input a value</string>
+    <string name="convert_button">Convert</string>
+    <string name="result_text">%1$.2f %2$s</string>
+    <string-array name="length_units">
+        <item>kilometer</item>
+        <item>meter</item>
+        <item>santimeter</item>
+        <item>mile</item>
+        <item>foot</item>
+        <item>inch</item>
+    </string-array>
+
+    <string name="from_text">From:</string>
+    <string name="to_text">To:</string>
+    <string name="error_message">Please enter a valid number.</string>
+    <string name="units_abbreviation">
+        <item>km</item>
+        <item>m</item>
+        <item>cm</item>
+        <item>mi</item>
+        <item>ft</item>
+        <item>in</item>
+    </string>
+</resources>
